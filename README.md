@@ -122,7 +122,7 @@ Then run the server with:
 npm start
 ```
 
-## 🔧 Notes for employers
+## 🔧 Some Notes 
 
 This project is designed to showcase real-world skills:
 

@@ -2,9 +2,10 @@
   "name": "finder",
   "version": "1.0.0",
   "type": "module",
-  "description": "This is a project for the codathon idea.",
+  "description": "This is a project for lost and found items.",
   "main": "app.js",
   "scripts": {
+    "postinstall": "npm install --prefix client",
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm run dev --prefix client",

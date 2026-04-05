@@ -37,7 +37,7 @@ const Upload= () => {
 
         // Send the form data including image to the backend
         try {
-            await axios.post("http://localhost:5000/api/items/upload", formDataToSend);
+            await axios.post(`${import.meta.env.VITE_API_URL}/api/items/upload`, formDataToSend);
             setMessage(`Item uploaded successfully!`);
             setError("");
             setTimeout(() => {

@@ -14,7 +14,7 @@ function Items({ searchQuery }) {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const result = await axios.get('http://localhost:5000/api/items');
+                const result = await axios.get(`${import.meta.env.VITE_API_URL}/api/items`);
                 const data = result.data.length > 0 ? result.data.reverse() : stuff;
                 setItems(data);
                 setFilteredItems(data);
